@@ -23,6 +23,8 @@ const config = {
         'grey': 'var(--grey-color)',
         'blue': 'var(--blue-color)',
         'red': 'var(--red-color)',
+        'text': 'var(--text-color)',
+        'whiteColor': 'var(--white-color)',
       },
     },
   },

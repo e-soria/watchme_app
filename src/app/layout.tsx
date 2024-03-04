@@ -4,7 +4,7 @@ import "./globals.css";
 
 const Bebas_Neue_Font = Bebas_Neue(
   {
-    subsets: ["latin"],
+    subsets: ["latin-ext"],
     weight: ['400']
 
   }
@@ -30,7 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={Cairo_Font.className}>{children}</body>
+      <body className={`${Bebas_Neue_Font.className} bg-body`}>
+        <div id="page-content" className="page-content">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

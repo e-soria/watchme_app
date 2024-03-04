@@ -1,14 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 :root {
-  --primary-font: 'Bebas Neue', sans-serif;
-  --secondary-font: 'Cairo', sans-serif;
+
+  --font-cairo: 'Cairo', sans-serif;
 
   --primary-color: #FFD369;
   --body-color: #0E0F14;
   --grey-color: #CAC4D0;
   --blue-color: #356EFF;
   --red-color: #F15858;
+  --text-color: #97a0b9;
+  --white-color: #e5e9f3;
+
+}
+
+.home-hero::before {
+  content:'';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0f14 90%);
+}
+
+h1 {
+  font-size: 44px;
+  color:var(--white-color);
+}
+
+h2 {
+  font-size: 32px;
+  color:var(--white-color);
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  color:var(--text-color);
+  font-family: var(--secondary-font);
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.slider-overflow {
+  padding: 0px 24px;
+}
+
+.slider-overflow .swiper {
+  padding: 0px 64px 0px 0px;
+  max-height: 470px;
+}
+
+.slider-overflow.genre-slider .swiper {
+  max-height: 250px;
 }
